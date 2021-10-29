@@ -9,6 +9,7 @@
 
 html {
     font-size: 62.5%;
+    background: #420516;
 }
 
 .contenedor {
@@ -18,9 +19,8 @@ html {
     color: #eee;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start ;
     flex-flow: wrap;
-    margin-bottom: 0rem;
     
     
 }
@@ -41,6 +41,7 @@ html {
     border-radius: 1rem;
     align-content: space-between;
     margin: 0 0 0 0;
+    box-shadow: 0 0.3rem 3rem rgba(0, 0, 0, 0.5);
 }
 
 .titulo .timg{
@@ -50,10 +51,12 @@ html {
 }
 
 .titulo h1 {
-    line-height: 3rem;
+    line-height: 8rem;
     text-align: center;
     font-size: 3rem;
     font-weight: lighter;
+    font-weight: 900;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 1);
 }
 
 
