@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="contenedor">
+        <div class="calendario">
+            <div class="mes">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="fecha">
+                    <h1></h1>
+                    <h2></h2>
+                    <p></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+
+            </div>
+            
+            <div class="diasSemana">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+
+            </div>
+
+            <div class="dias">
+
+            </div>
+
+        </div>
+
+        <div class="lista">
+            <header>Tareas por Hacer</header>
+            <div class="entrada">
+                <input type="text" placeholder="Agrega tus tareas">
+                <button><i class="fas fa-plus"></i></button>
+            </div>
+            <ul class="todoLista">
+                <li>1. Amigos<span><i class="fas fa-trash"></i></span></li>
+                <li>2. Vida<span><i class="fas fa-trash"></i></span></li>
+                <li>3. Hambres<span><i class="fas fa-trash"></i></span></li>
+            </ul>
+            <div class="pie">
+                <span>Tareas pendientes</span>
+                <button>Marcar todo</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

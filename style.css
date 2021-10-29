@@ -1,0 +1,246 @@
+/*https://colorhunt.co/palette/4205167d1935b42b51e63e6d*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    background-color: #420516;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.calendario, .lista{
+    width: 45rem;
+    height: 52rem;
+}
+
+.calendario {
+    background-color: #7D1935;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    border-radius: 1.6rem;
+}
+
+.mes {
+    width: 100%;
+    height: 12rem;
+    background-color: #B42B51;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-align: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    border-radius: 1.6rem;
+}
+
+.mes{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.mes h1, h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+
+}
+
+.mes p {
+    font-size: 1.6rem;
+}
+
+.prev, .next:hover {
+    border: 0.2rem solid #777;
+    color: aliceblue;
+}
+
+.diasSemana {
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.diasSemana div {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(44.2rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.dias {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+
+.dias div {
+    font-size: 1.4rem;
+    margin: 0.3rem;
+    width: calc(40.2rem/7);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    transition:  background-color 0.2s;
+    border-radius: 1rem;
+}
+
+.dias div:hover:not(.hoy) {
+    background-color: #E63E6D;
+    border: 0.2rem solid #777;
+    cursor: pointer;
+}
+
+.prev-date, .diaSiguiente {
+    opacity: 0.5;
+}
+
+.hoy {
+    background-color: #f31a58;
+}
+
+
+.lista {
+    margin-left: 3rem;
+    background-color: #7D1935;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+
+}
+
+.lista header {
+    background-color: #B42B51;
+    font-size: 2.5rem;
+    height: 8%;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+
+}
+
+.entrada {
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.entrada input {
+    width: 85%;
+    height: 100%;
+    border: transparent;
+    border-radius: 0.5rem;
+    background-color: #c95b7ac2;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+    color: white;
+
+}
+
+.entrada button {
+    width: 5rem;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: tomato;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+    margin-left: 0.4rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.todoLista {
+    
+}
+
+.todoLista li {
+    list-style: none;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    background: #e9527d;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0 2rem;
+    cursor: default;
+    overflow: hidden;
+
+}
+.todoLista li span {
+    position: absolute;
+    right: -7%;
+    color: #61140b;
+    background: #eee;
+    border-radius: 0 0.5rem 0.5rem 0;
+    width: 7%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todoLista li:hover span {
+    right: 0;
+}
+
+.lista .pie {
+    margin-top: 3rem;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    justify-content: space-between;
+}
+
+.pie button{
+    border: none;
+    outline: none;
+    background: tomato;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    line-height: 2rem;
+}
+.pie button, span {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+
