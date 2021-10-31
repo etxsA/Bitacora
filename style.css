@@ -19,19 +19,18 @@ html {
     color: #eee;
     display: flex;
     justify-content: center;
-    align-items: flex-start ;
+    align-content: center;
     flex-flow: wrap;
-    
     
 }
 .cabecera{
     width: 110%;
-    height: 10rem;
+    height: 10vh;
     margin-bottom: 0rem;
     display: flex;
     align-items: center;
-    align-content: center;
-    padding-left: 25%;
+    justify-content: center;
+    margin-bottom: 4vh;
 
 }
 .titulo {
@@ -39,15 +38,17 @@ html {
     display: flex;
     width: 92rem;
     border-radius: 1rem;
-    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 0 0 0;
     box-shadow: 0 0.3rem 3rem rgba(0, 0, 0, 0.5);
+    position: relative
+    top;
 }
 
 .titulo .timg{
     width: 7rem;
     height: 7rem;
-    align-content: center;
 }
 
 .titulo h1 {
