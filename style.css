@@ -1,4 +1,6 @@
 /*https://colorhunt.co/palette/4205167d1935b42b51e63e6d*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css");
 
 * {
     margin: 0;
@@ -168,8 +170,6 @@ html {
     background-color: #7D1935;
     border-radius: 1rem;
     padding: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     display: flex;
     flex-flow: column wrap;
     box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
