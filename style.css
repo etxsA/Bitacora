@@ -22,7 +22,7 @@ html {
     display: flex;
     justify-content: center;
     align-content: center;
-    flex-flow: wrap;
+    flex-flow: row wrap;
     
 }
 .cabecera{
@@ -42,10 +42,7 @@ html {
     border-radius: 1rem;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 0 0;
     box-shadow: 0 0.3rem 3rem rgba(0, 0, 0, 0.5);
-    position: relative
-    top;
 }
 
 .titulo .timg{
@@ -65,8 +62,9 @@ html {
 
 
 .calendario, .lista{
-    width: 45rem;
     height: 52rem;
+    margin: 0 2rem 2rem;
+    flex: 0 1 45rem;
 }
 
 .calendario {
@@ -166,7 +164,6 @@ html {
 
 
 .lista {
-    margin-left: 3rem;
     background-color: #7D1935;
     border-radius: 1rem;
     padding: 2rem;
